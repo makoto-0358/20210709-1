@@ -3,8 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HelloController;
 
-Route::get('/building/{room?}', [HelloController::class, 'index']);
-
+Route::get('/food', [HelloController::class, 'food']);
+Route::get('/food/{id?}', [HelloController::class, 'id']);
+Route::get('/food/{id?}/detail', [HelloController::class, 'detail']);
 /*
 |--------------------------------------------------------------------------
 | Web Routes
